@@ -1,0 +1,17 @@
+# Git metadata backup
+.git_backup/
+
+# Dependencies
+node_modules/
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# Uploaded files
+uploads/
+server/uploads/
+
+# Frontend build output
+client/dist/
