@@ -2173,6 +2173,7 @@ export default function MyFiles() {
 
                                                 <div
                                                     className="sf-action-wrap"
+                                                    style={{ position: "relative", overflow: "visible" }}
                                                     onClick={(
                                                         e
                                                     ) =>
@@ -2213,7 +2214,23 @@ export default function MyFiles() {
 
                                                     {openMenu ===
                                                         id && (
-                                                        <div className="sf-action-menu">
+                                                        <div
+                                                            className="sf-action-menu"
+                                                            style={{
+                                                                position: "absolute",
+                                                                right: 0,
+                                                                bottom: "calc(100% + 6px)",
+                                                                top: "auto",
+                                                                zIndex: 9999,
+                                                                minWidth: 190,
+                                                                maxHeight: 320,
+                                                                overflowY: "auto",
+                                                                background: "#ffffff",
+                                                                border: "1px solid #e2e8f0",
+                                                                borderRadius: 10,
+                                                                boxShadow: "0 8px 24px rgba(15, 23, 42, 0.12)",
+                                                            }}
+                                                        >
 
                                                             <button
                                                                 type="button"
